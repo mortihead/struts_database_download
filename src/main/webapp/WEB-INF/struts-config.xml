@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+        "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+<!--    описание классов, наследующихся от ActionForm. Хранит в себе данные, пришедшие от форм-->
+    <form-beans>
+        <form-bean name="MainPageForm" type="myApp.controllers.MainPageForm"/>
+    </form-beans>
+
+<!--    описывает класс обработчик и связь с ActionForm-->
+    <action-mappings>
+        <action input="/index.jsp"
+                name="MainPageForm"
+                path="/Main"
+                type="myApp.controllers.MainPageAction">
+            <forward name="main" path="/index.jsp"/>
+        </action>
+    </action-mappings>
+
+</struts-config>
