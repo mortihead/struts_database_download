@@ -6,10 +6,7 @@ import javax.activation.MimetypesFileTypeMap;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.Objects;
 
 public class DataPacket {
@@ -37,9 +34,11 @@ public class DataPacket {
             if (FilenameUtils.getExtension(file.getName()).equals("csv")) {
                 FileReader fileReader = new FileReader(file);
                 BufferedReader bufferedReader = new BufferedReader(fileReader);
+                bufferedReader.readLine();
                 while (sendPacket(bufferedReader)) {
                     System.out.println("package read!");//need log!
                 }
+                bufferedReader.close();
             } else {
                 System.out.println("invalid file!!");//NEED LOG !!
             }
@@ -50,15 +49,16 @@ public class DataPacket {
     private static boolean sendPacket(BufferedReader fileReader) throws Exception {
         Statement stmt;//запрос
         String buffer;
+        int i = 0;
         stmt = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);//создаю запрос
         connection.setAutoCommit(false);//вырубаю автокоммит
-        //stmt.addBatch("INSERT INTO TEST.T_DICTIONARY(ID, NAME, VALUE) VALUES('?', '?', '?')");
-        for (int i = 0; i < BUFFSIZE && (buffer = fileReader.readLine()) != null; i++) {
-            System.out.println(buffer);
+        while (i++ < BUFFSIZE && (buffer = fileReader.readLine()) != null) {
+            String[] line = buffer.split(",");
+            stmt.addBatch("INSERT INTO TEST.T_DICTIONARY(ID, NAME, VALUE) VALUES(\'" + line[0] + "\', \'" + line[1] + "\', " + line[2] + ")");
         }
         stmt.executeBatch();
         connection.commit();
         stmt.close();
-        return false;
+        return i == BUFFSIZE;
     }
 }
