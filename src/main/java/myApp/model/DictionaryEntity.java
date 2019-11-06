@@ -46,7 +46,6 @@ public class DictionaryEntity {
         if (o == null || getClass() != o.getClass()) return false;
 
         DictionaryEntity that = (DictionaryEntity) o;
-
         if (id != that.id) return false;
         if (!Objects.equals(name, that.name)) return false;
         return Objects.equals(value, that.value);

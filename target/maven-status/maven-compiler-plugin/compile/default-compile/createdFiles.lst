@@ -1,5 +1,7 @@
 myApp\controllers\MainPageAction.class
 myApp\utils\HibernateUtil.class
+myApp\model\DataPacket.class
 myApp\model\DictionaryEntity.class
+myApp\model\Configuration.class
 myApp\controllers\MainPageForm.class
 myApp\utils\HibernateSessionFactory.class
