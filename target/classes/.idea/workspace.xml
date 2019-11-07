@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ed140dee-324a-46d7-b470-48c5ae70cdef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../java/myApp/rest/RestRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DatabaseDownload.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DatabaseDownload.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../processed/source.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/myApp/controllers/MainPageAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java/myApp/controllers/MainPageAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/myApp/model/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java/myApp/model/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/myApp/model/DataPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java/myApp/model/DataPacket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/classes/myApp/controllers/MainPageAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/classes/myApp/controllers/MainPageAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/classes/myApp/model/Configuration.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/classes/myApp/model/Configuration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/classes/myApp/model/DataPacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/classes/myApp/model/DataPacket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/tomcat/logs/access_log.2019-11-07" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/tomcat/logs/access_log.2019-11-07" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1THPe2EpZqKgjeNJRcsjZer9V9e" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed140dee-324a-46d7-b470-48c5ae70cdef" name="Default Changelist" comment="" />
+      <created>1573114139728</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573114139728</updated>
+      <workItem from="1573114140902" duration="23000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

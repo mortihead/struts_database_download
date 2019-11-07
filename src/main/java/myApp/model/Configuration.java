@@ -6,7 +6,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 
 //считывает xml файл из корня проекта и сохраняет в поля параметры конфига
-public class Configuration {
+class Configuration {
     static {
         File file = new File("config.xml");
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -30,13 +30,13 @@ public class Configuration {
     private static final String password;
     private static final String url;
 
-    public static String getInputDirectory() { return inputDirectory; }
+    static String getInputDirectory() { return inputDirectory; }
 
-    public static String getOutputDirectory() { return outputDirectory; }
+    static String getOutputDirectory() { return outputDirectory; }
 
-    public static String getUserName() { return userName; }
+    static String getUserName() { return userName; }
 
-    public static String getPassword() { return password; }
+    static String getPassword() { return password; }
 
-    public static String getUrl() { return url; }
+    static String getUrl() { return url; }
 }

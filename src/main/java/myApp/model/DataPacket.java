@@ -14,7 +14,7 @@ public class DataPacket {
     static {
         try {
             Class.forName("org.h2.Driver");
-            connection = DriverManager.getConnection(Configuration.getUrl(),
+            connectionDb = DriverManager.getConnection(Configuration.getUrl(),
                     Configuration.getUserName(), Configuration.getPassword());
         }
         catch (Exception ex) {
@@ -22,10 +22,10 @@ public class DataPacket {
         }
     }
 
-    private static Connection connection;
-    private static final int BUFFSIZE = 10;
+    private static Connection connectionDb;
+    private static final int buffSize = 10;
 
-    public Connection getConnection() { return connection; }
+    public Connection getConnectionDb() { return connectionDb; }
 
     //метод проверяет все файлы в заданной папке и загружает их в бд, если их тип csv
     public static void readFiles() throws Exception {
@@ -51,19 +51,19 @@ public class DataPacket {
 
     //читывает из файлового дескриптора BUFFSIZE строк, создает sql запрос на insert и выполняет его
     private static boolean sendPacket(BufferedReader fileReader) throws Exception {
-        Statement stmt;//запрос
+        Statement stmt;
         String buffer;
         int i = 0;
-        stmt = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
-        connection.setAutoCommit(false);
-        while (i++ < BUFFSIZE && (buffer = fileReader.readLine()) != null) {
+        stmt = connectionDb.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+        connectionDb.setAutoCommit(false);
+        while (i++ < buffSize && (buffer = fileReader.readLine()) != null) {
             String[] line = buffer.split(",");
             stmt.addBatch("INSERT INTO TEST.T_DICTIONARY(ID, NAME, VALUE) VALUES(\'"
                     + line[0] + "\', \'" + line[1] + "\', " + line[2] + ")");
         }
         stmt.executeBatch();
-        connection.commit();
+        connectionDb.commit();
         stmt.close();
-        return i == BUFFSIZE;
+        return i == buffSize;
     }
 }

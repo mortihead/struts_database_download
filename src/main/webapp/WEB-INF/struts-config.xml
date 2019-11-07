@@ -16,7 +16,7 @@
                 name="MainPageForm"
                 path="/Main"
                 type="myApp.controllers.MainPageAction">
-            <forward name="main" path="/index.jsp"/>
+            <forward name="main" path="/getResult.jsp"/>
         </action>
     </action-mappings>
 
