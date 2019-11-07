@@ -1364,3 +1364,334 @@ Connection is broken: "java.net.SocketException: Connection reset: localhost" [9
 07.11.2019 16:39:25.932 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Done materializing entity [myApp.model.DictionaryEntity#9]
 07.11.2019 16:39:25.932 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Resolving associations for [myApp.model.DictionaryEntity#10]
 07.11.2019 16:39:25.932 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Done materializing entity [myApp.model.DictionaryEntity#10]
+07.11.2019 17:04:54.823 [http-bio-8888-exec-1] DEBUG  org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+07.11.2019 17:04:54.823 [http-bio-8888-exec-1] DEBUG  o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+07.11.2019 17:04:54.823 [http-bio-8888-exec-1] DEBUG  o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+07.11.2019 17:04:54.823 [http-bio-8888-exec-1] DEBUG  o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+07.11.2019 17:04:54.838 [http-bio-8888-exec-1] DEBUG  o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.envers.boot.internal.EnversIntegrator].
+07.11.2019 17:04:54.901 [http-bio-8888-exec-1] INFO   o.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+07.11.2019 17:04:54.901 [http-bio-8888-exec-1] INFO   o.h.cfg.Environment - HHH000206: hibernate.properties not found
+07.11.2019 17:04:54.995 [http-bio-8888-exec-1] DEBUG  o.h.b.j.i.s.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+07.11.2019 17:04:54.995 [http-bio-8888-exec-1] DEBUG  o.h.b.j.i.s.LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+07.11.2019 17:04:54.995 [http-bio-8888-exec-1] DEBUG  o.h.b.c.i.JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+07.11.2019 17:04:55.104 [http-bio-8888-exec-1] DEBUG  o.h.c.Configuration - Building session factory using internal StandardServiceRegistryBuilder
+07.11.2019 17:04:55.104 [http-bio-8888-exec-1] DEBUG  o.h.s.s.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+07.11.2019 17:04:55.104 [http-bio-8888-exec-1] DEBUG  o.h.c.Configuration - Building session factory using provided StandardServiceRegistry
+07.11.2019 17:04:55.120 [http-bio-8888-exec-1] DEBUG  o.h.c.i.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[class org.hibernate.cache.infinispan.JndiInfinispanRegionFactory, class org.hibernate.cache.ehcache.EhCacheRegionFactory, class org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory, class org.hibernate.cache.infinispan.InfinispanRegionFactory]` RegionFactory strategies were registered
+07.11.2019 17:04:55.120 [http-bio-8888-exec-1] DEBUG  o.h.c.i.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+07.11.2019 17:04:55.135 [http-bio-8888-exec-1] INFO   o.h.a.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+07.11.2019 17:04:55.151 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@30dfa223
+07.11.2019 17:04:55.151 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@30dfa223
+07.11.2019 17:04:55.151 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@30dfa223
+07.11.2019 17:04:55.151 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@66d9d811
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@12a95460
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@7af3bb85
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@21e489b1
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@21e489b1
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@21e489b1
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@37479cd9
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@37479cd9
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@37479cd9
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@2f7ba669
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@2f7ba669
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@2f7ba669
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@6a49a572
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@6a49a572
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@6a49a572
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@6e3360e4
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@6e3360e4
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@6e3360e4
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@194ea0c1
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@194ea0c1
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@194ea0c1
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@27b325a2
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@27b325a2
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@27b325a2
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@4ae6b2e8
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@4ae6b2e8
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@2515b9f4
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@2515b9f4
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@76601eb3
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@76601eb3
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@1c11617
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@3d3c4c04
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@23f818c9
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@23f818c9
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@1228e9e4
+07.11.2019 17:04:55.166 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@1228e9e4
+07.11.2019 17:04:55.182 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@2c5c15c1
+07.11.2019 17:04:55.182 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@2c5c15c1
+07.11.2019 17:04:55.182 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@1591f9bd
+07.11.2019 17:04:55.182 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@1591f9bd
+07.11.2019 17:04:55.182 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@365d5953
+07.11.2019 17:04:55.182 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@365d5953
+07.11.2019 17:04:55.182 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@3badf793
+07.11.2019 17:04:55.182 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@3badf793
+07.11.2019 17:04:55.182 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@f2c40d7
+07.11.2019 17:04:55.182 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@f2c40d7
+07.11.2019 17:04:55.182 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@4e8da1fb
+07.11.2019 17:04:55.182 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@4e8da1fb
+07.11.2019 17:04:55.182 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@6a4c2dcd
+07.11.2019 17:04:55.182 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@6a4c2dcd
+07.11.2019 17:04:55.182 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@c8d54ae
+07.11.2019 17:04:55.182 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@c8d54ae
+07.11.2019 17:04:55.182 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@3e5bc36b
+07.11.2019 17:04:55.182 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@3e5bc36b
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@492f42b3
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@492f42b3
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@492f42b3
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@3fb06a8a
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@61f5c349
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@61f5c349
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@61f5c349
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@7489a595
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@28f76494
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@28f76494
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@683fde1f
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@683fde1f
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@b853e6f
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@b853e6f
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@555850a7
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@555850a7
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@46615e9c
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@46615e9c
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@598db436
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@24232674
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@24232674
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@24232674
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1ba4de3b
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1ba4de3b
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1ba4de3b
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@1373038b
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@ed795f4
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@67283639
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@67283639
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@67283639
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@590b8a89
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@590b8a89
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@590b8a89
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@6beb5dd5
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@38de75ac
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@82ca4fa
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@82ca4fa
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@5823c2fc
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@5f467b4b
+07.11.2019 17:04:55.198 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@5f467b4b
+07.11.2019 17:04:55.213 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@234039e2
+07.11.2019 17:04:55.213 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@234039e2
+07.11.2019 17:04:55.213 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@583d1b1e
+07.11.2019 17:04:55.213 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@69c700b8
+07.11.2019 17:04:55.213 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@59b6bdc4
+07.11.2019 17:04:55.213 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@4111aa99
+07.11.2019 17:04:55.213 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@4111aa99
+07.11.2019 17:04:55.213 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1d728389
+07.11.2019 17:04:55.213 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@517bb7dc
+07.11.2019 17:04:55.213 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@667fb769
+07.11.2019 17:04:55.213 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@756849ed
+07.11.2019 17:04:55.213 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@7c0ff202
+07.11.2019 17:04:55.213 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@70c67f08
+07.11.2019 17:04:55.213 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@6b195a86
+07.11.2019 17:04:55.213 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@5c894129
+07.11.2019 17:04:55.229 [http-bio-8888-exec-1] DEBUG  o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+07.11.2019 17:04:55.229 [http-bio-8888-exec-1] DEBUG  o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+07.11.2019 17:04:55.229 [http-bio-8888-exec-1] DEBUG  o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+07.11.2019 17:04:55.229 [http-bio-8888-exec-1] DEBUG  o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+07.11.2019 17:04:55.229 [http-bio-8888-exec-1] DEBUG  o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+07.11.2019 17:04:55.229 [http-bio-8888-exec-1] DEBUG  o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+07.11.2019 17:04:55.229 [http-bio-8888-exec-1] DEBUG  o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+07.11.2019 17:04:55.229 [http-bio-8888-exec-1] DEBUG  o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+07.11.2019 17:04:55.229 [http-bio-8888-exec-1] DEBUG  o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+07.11.2019 17:04:55.229 [http-bio-8888-exec-1] DEBUG  o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+07.11.2019 17:04:55.229 [http-bio-8888-exec-1] DEBUG  o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+07.11.2019 17:04:55.229 [http-bio-8888-exec-1] DEBUG  o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+07.11.2019 17:04:55.229 [http-bio-8888-exec-1] DEBUG  o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+07.11.2019 17:04:55.244 [http-bio-8888-exec-1] DEBUG  o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+07.11.2019 17:04:55.244 [http-bio-8888-exec-1] WARN   o.h.o.c.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+07.11.2019 17:04:55.244 [http-bio-8888-exec-1] INFO   o.h.o.c.pooling - HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:tcp://localhost/~/test]
+07.11.2019 17:04:55.244 [http-bio-8888-exec-1] INFO   o.h.o.c.pooling - HHH10001001: Connection properties: {user=sa, password=sa}
+07.11.2019 17:04:55.244 [http-bio-8888-exec-1] INFO   o.h.o.c.pooling - HHH10001003: Autocommit mode: false
+07.11.2019 17:04:55.244 [http-bio-8888-exec-1] DEBUG  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - Initializing Connection pool with 1 Connections
+07.11.2019 17:04:55.244 [http-bio-8888-exec-1] INFO   o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 100 (min=1)
+07.11.2019 17:04:55.291 [http-bio-8888-exec-1] DEBUG  o.h.e.j.e.i.JdbcEnvironmentInitiator - Database ->
+       name : H2
+    version : 1.4.200 (2019-10-14)
+      major : 1
+      minor : 4
+07.11.2019 17:04:55.291 [http-bio-8888-exec-1] DEBUG  o.h.e.j.e.i.JdbcEnvironmentInitiator - Driver ->
+       name : H2 JDBC Driver
+    version : 1.4.200 (2019-10-14)
+      major : 1
+      minor : 4
+07.11.2019 17:04:55.291 [http-bio-8888-exec-1] DEBUG  o.h.e.j.e.i.JdbcEnvironmentInitiator - JDBC version : 4.1
+07.11.2019 17:04:55.307 [http-bio-8888-exec-1] INFO   o.h.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+07.11.2019 17:04:55.354 [http-bio-8888-exec-1] DEBUG  o.h.e.j.e.s.IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+07.11.2019 17:04:55.370 [http-bio-8888-exec-1] DEBUG  o.h.b.m.r.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+07.11.2019 17:04:55.370 [http-bio-8888-exec-1] INFO   o.h.e.b.i.EnversServiceImpl - Envers integration enabled? : true
+07.11.2019 17:04:55.370 [http-bio-8888-exec-1] DEBUG  o.h.t.BasicTypeRegistry - Adding type registration org.hibernate.envers.internal.entities.RevisionTypeType -> org.hibernate.type.CustomType@23838a00
+07.11.2019 17:04:55.370 [http-bio-8888-exec-1] DEBUG  o.h.t.s.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@41a1dfb6] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@6c35bf8d]
+07.11.2019 17:04:55.416 [http-bio-8888-exec-1] DEBUG  o.h.c.AnnotationBinder - Binding entity from annotated class: myApp.model.DictionaryEntity
+07.11.2019 17:04:55.432 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+07.11.2019 17:04:55.432 [http-bio-8888-exec-1] DEBUG  o.h.c.a.EntityBinder - Import with entity name DictionaryEntity
+07.11.2019 17:04:55.432 [http-bio-8888-exec-1] DEBUG  o.h.b.m.r.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=test}, physicalName=Name{catalog=null, schema=test}]
+07.11.2019 17:04:55.432 [http-bio-8888-exec-1] DEBUG  o.h.c.a.EntityBinder - Bind entity myApp.model.DictionaryEntity on table t_dictionary
+07.11.2019 17:04:55.448 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(test.t_dictionary), mappingColumn=id, insertable=true, updatable=true, unique=false}
+07.11.2019 17:04:55.448 [http-bio-8888-exec-1] DEBUG  o.h.c.a.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+07.11.2019 17:04:55.448 [http-bio-8888-exec-1] DEBUG  o.h.c.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [myApp.model.DictionaryEntity:id]
+07.11.2019 17:04:55.463 [http-bio-8888-exec-1] DEBUG  o.h.c.a.SimpleValueBinder - building SimpleValue for id
+07.11.2019 17:04:55.463 [http-bio-8888-exec-1] DEBUG  o.h.c.a.PropertyBinder - Building property id
+07.11.2019 17:04:55.463 [http-bio-8888-exec-1] DEBUG  o.h.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, assigned, , ...)
+07.11.2019 17:04:55.463 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(test.t_dictionary), mappingColumn=name, insertable=true, updatable=true, unique=false}
+07.11.2019 17:04:55.463 [http-bio-8888-exec-1] DEBUG  o.h.c.a.PropertyBinder - MetadataSourceProcessor property name with lazy=false
+07.11.2019 17:04:55.463 [http-bio-8888-exec-1] DEBUG  o.h.c.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [myApp.model.DictionaryEntity:name]
+07.11.2019 17:04:55.463 [http-bio-8888-exec-1] DEBUG  o.h.c.a.SimpleValueBinder - building SimpleValue for name
+07.11.2019 17:04:55.463 [http-bio-8888-exec-1] DEBUG  o.h.c.a.PropertyBinder - Building property name
+07.11.2019 17:04:55.463 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(test.t_dictionary), mappingColumn=value, insertable=true, updatable=true, unique=false}
+07.11.2019 17:04:55.463 [http-bio-8888-exec-1] DEBUG  o.h.c.a.PropertyBinder - MetadataSourceProcessor property value with lazy=false
+07.11.2019 17:04:55.463 [http-bio-8888-exec-1] DEBUG  o.h.c.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [myApp.model.DictionaryEntity:value]
+07.11.2019 17:04:55.463 [http-bio-8888-exec-1] DEBUG  o.h.c.a.SimpleValueBinder - building SimpleValue for value
+07.11.2019 17:04:55.463 [http-bio-8888-exec-1] DEBUG  o.h.c.a.PropertyBinder - Building property value
+07.11.2019 17:04:55.463 [http-bio-8888-exec-1] DEBUG  o.h.c.a.SimpleValueBinder - Starting fillSimpleValue for id
+07.11.2019 17:04:55.463 [http-bio-8888-exec-1] DEBUG  o.h.c.a.SimpleValueBinder - Starting fillSimpleValue for name
+07.11.2019 17:04:55.463 [http-bio-8888-exec-1] DEBUG  o.h.c.a.SimpleValueBinder - Starting fillSimpleValue for value
+07.11.2019 17:04:55.463 [http-bio-8888-exec-1] DEBUG  o.h.m.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [t_dictionary]
+07.11.2019 17:04:55.526 [http-bio-8888-exec-1] DEBUG  o.h.i.SessionFactoryImpl - Building session factory
+07.11.2019 17:04:55.526 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - SessionFactory name : null
+07.11.2019 17:04:55.526 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Automatic flush during beforeCompletion(): enabled
+07.11.2019 17:04:55.526 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Automatic session close at end of transaction: disabled
+07.11.2019 17:04:55.526 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Statistics: disabled
+07.11.2019 17:04:55.526 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Deleted entity synthetic identifier rollback: disabled
+07.11.2019 17:04:55.526 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Default entity-mode: pojo
+07.11.2019 17:04:55.526 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Allow initialization of lazy state outside session : disabled
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Using BatchFetchStyle : LEGACY
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Default batch fetch size: -1
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Maximum outer join fetch depth: null
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Default null ordering: NONE
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Order SQL updates by primary key: disabled
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Order SQL inserts for batching: disabled
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - multi-tenancy strategy : NONE
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - JTA Track by Thread: enabled
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Query language substitutions: {}
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Named query checking : enabled
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Second-level cache: disabled
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Second-level query cache: disabled
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Second-level query cache factory: null
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Second-level cache region prefix: null
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Optimize second-level cache for minimal puts: disabled
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Structured second-level cache entries: disabled
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Second-level cache direct-reference entries: disabled
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Automatic eviction of collection cache: disabled
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - JDBC batch size: 15
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - JDBC batch updates for versioned data: enabled
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Scrollable result sets: enabled
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Wrap result sets: disabled
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - JDBC3 getGeneratedKeys(): enabled
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - JDBC result set fetch size: null
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Connection release mode: AFTER_TRANSACTION
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - Generate SQL with comments: disabled
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - JPA compliance - query : 
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - JPA compliance - closed-handling : 
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - JPA compliance - lists : 
+07.11.2019 17:04:55.541 [http-bio-8888-exec-1] DEBUG  o.h.cfg.Settings - JPA compliance - transactions : 
+07.11.2019 17:04:55.588 [http-bio-8888-exec-1] DEBUG  o.h.i.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+07.11.2019 17:04:55.588 [http-bio-8888-exec-1] DEBUG  o.h.i.SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, dialect=org.hibernate.dialect.H2Dialect, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, hibernate.dialect=org.hibernate.dialect.H2Dialect, java.class.path=C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.2\lib\idea_rt.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, catalina.useNaming=true, java.vendor.url=http://java.oracle.com/, user.timezone=Europe/Moscow, maven.conf=C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.2\plugins\maven\lib\maven3/conf, os.name=Windows 10, java.vm.specification.version=1.8, sun.java.launcher=SUN_STANDARD, user.country=RU, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_221\jre\bin, sun.java.command=org.codehaus.classworlds.Launcher -Didea.version2019.2.2 tomcat7:run, maven.home=C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.2\plugins\maven\lib\maven3, sun.cpu.endian=little, user.home=C:\Users\OUT-Zanin-DV, user.language=ru, java.specification.vendor=Oracle Corporation, java.naming.factory.url.pkgs=org.apache.naming, idea.version2019.2.2=true, java.home=C:\Program Files\Java\jdk1.8.0_221\jre, file.separator=\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, package.access=sun.,org.apache.catalina.,org.apache.coyote.,org.apache.tomcat.,org.apache.jasper., package.definition=sun.,java.,org.apache.catalina.,org.apache.coyote.,org.apache.tomcat.,org.apache.jasper., sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_221\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_221\jre\classes, tomcat.maven.http.port=8888, user.script=, server.loader=, java.util.logging.config.file=C:\Users\OUT-Zanin-DV\Desktop\DatabaseDownload\target\tomcat\conf\logging.properties, connection.password=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_221-b11, java.naming.factory.initial=org.apache.naming.java.javaURLContextFactory, user.name=OUT-Zanin-DV, path.separator=;, hibernate.connection.username=****, common.loader=C:\Users\OUT-Zanin-DV\Desktop\DatabaseDownload\target\tomcat/lib,C:\Users\OUT-Zanin-DV\Desktop\DatabaseDownload\target\tomcat/lib/*.jar,C:\Users\OUT-Zanin-DV\Desktop\DatabaseDownload\target\tomcat/lib,C:\Users\OUT-Zanin-DV\Desktop\DatabaseDownload\target\tomcat/lib/*.jar, os.version=10.0, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_221\jre\lib\endorsed, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:h2:tcp://localhost/~/test, connection.pool_size=100, file.encoding=UTF-8, guice.disable.misplaced.annotation.check=true, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, maven.ext.class.path=C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.2\plugins\maven\lib\maven-event-listener.jar, org.apache.catalina.startup.ContextConfig.jarsToSkip=, hibernate.connection.driver_class=org.h2.Driver, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=C:\Users\OUT-ZA~1\AppData\Local\Temp\, catalina.home=C:\Users\OUT-Zanin-DV\Desktop\DatabaseDownload\target\tomcat, java.version=1.8.0_221, user.dir=C:\Users\OUT-Zanin-DV\Desktop\DatabaseDownload, os.arch=amd64, connection.username=, maven.multiModuleProjectDirectory=C:\Users\OUT-Zanin-DV\Desktop\DatabaseDownload, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, java.awt.printerjob=sun.awt.windows.WPrinterJob, tomcat.util.scan.DefaultJarScanner.jarsToSkip=bootstrap.jar,commons-daemon.jar,tomcat-juli.jar,annotations-api.jar,el-api.jar,jsp-api.jar,servlet-api.jar,websocket-api.jar,catalina.jar,catalina-ant.jar,catalina-ha.jar,catalina-tribes.jar,jasper.jar,jasper-el.jar,ecj-*.jar,tomcat-api.jar,tomcat-util.jar,tomcat-coyote.jar,tomcat-dbcp.jar,tomcat-jni.jar,tomcat-spdy.jar,tomcat-i18n-en.jar,tomcat-i18n-es.jar,tomcat-i18n-fr.jar,tomcat-i18n-ja.jar,tomcat-juli-adapters.jar,catalina-jmx-remote.jar,catalina-ws.jar,tomcat-jdbc.jar,tools.jar,commons-beanutils*.jar,commons-codec*.jar,commons-collections*.jar,commons-dbcp*.jar,commons-digester*.jar,commons-fileupload*.jar,commons-httpclient*.jar,commons-io*.jar,commons-lang*.jar,commons-logging*.jar,commons-math*.jar,commons-pool*.jar,jstl.jar,geronimo-spec-jaxrpc*.jar,wsdl4j*.jar,ant.jar,ant-junit*.jar,aspectj*.jar,jmx.jar,h2*.jar,hibernate*.jar,httpclient*.jar,jmx-tools.jar,jta*.jar,log4j.jar,log4j-1*.jar,mail*.jar,slf4j*.jar,xercesImpl.jar,xmlParserAPIs.jar,xml-apis.jar,junit.jar,junit-*.jar,hamcrest*.jar,org.hamcrest*.jar,ant-launcher.jar, sun.os.patch.level=, connection.driver_class=org.h2.Driver, catalina.base=C:\Users\OUT-Zanin-DV\Desktop\DatabaseDownload\target\tomcat, shared.loader=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@3b529fe8, java.util.logging.manager=org.apache.juli.ClassLoaderLogManager, java.library.path=C:\Program Files\Java\jdk1.8.0_221\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:/Program Files/JetBrains/IntelliJ IDEA 2019.2.2/plugins/maven/lib/maven3\bin;C:\Users\OUT-Zanin-DV\AppData\Local\Microsoft\WindowsApps;;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=25.221-b11, classworlds.conf=C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.2\plugins\maven\lib\maven3\bin\m2.conf, org.apache.catalina.startup.TldConfig.jarsToSkip=tomcat7-websocket.jar, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, hibernate.connection.pool_size=100, tomcat.util.buf.StringCache.byte.enabled=true, connection.url=, java.class.version=52.0}
+07.11.2019 17:04:55.604 [http-bio-8888-exec-1] DEBUG  o.h.s.s.JaccIntegrator - Skipping JACC integration as it was not enabled
+07.11.2019 17:04:55.604 [http-bio-8888-exec-1] DEBUG  o.h.e.b.i.EnversIntegrator - Skipping Envers listener registrations : No audited entities found
+07.11.2019 17:04:55.604 [http-bio-8888-exec-1] DEBUG  o.h.i.SessionFactoryImpl - Instantiated session factory
+07.11.2019 17:04:55.604 [http-bio-8888-exec-1] DEBUG  o.h.t.s.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@41a1dfb6] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@245b1a17]
+07.11.2019 17:04:55.635 [http-bio-8888-exec-1] DEBUG  o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [myApp.model.DictionaryEntity] is safe
+07.11.2019 17:04:55.635 [http-bio-8888-exec-1] DEBUG  o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : myApp.model.DictionaryEntity
+07.11.2019 17:04:55.651 [http-bio-8888-exec-1] DEBUG  o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [myApp.model.DictionaryEntity] is safe
+07.11.2019 17:04:55.651 [http-bio-8888-exec-1] DEBUG  o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : myApp.model.DictionaryEntity
+07.11.2019 17:04:55.792 [http-bio-8888-exec-1] DEBUG  o.h.p.e.AbstractEntityPersister - Static SQL for entity: myApp.model.DictionaryEntity
+07.11.2019 17:04:55.792 [http-bio-8888-exec-1] DEBUG  o.h.p.e.AbstractEntityPersister -  Version select: select id from test.t_dictionary where id =?
+07.11.2019 17:04:55.792 [http-bio-8888-exec-1] DEBUG  o.h.p.e.AbstractEntityPersister -  Snapshot select: select dictionary_.id, dictionary_.name as name2_0_, dictionary_.value as value3_0_ from test.t_dictionary dictionary_ where dictionary_.id=?
+07.11.2019 17:04:55.792 [http-bio-8888-exec-1] DEBUG  o.h.p.e.AbstractEntityPersister -  Insert 0: insert into test.t_dictionary (name, value, id) values (?, ?, ?)
+07.11.2019 17:04:55.792 [http-bio-8888-exec-1] DEBUG  o.h.p.e.AbstractEntityPersister -  Update 0: update test.t_dictionary set name=?, value=? where id=?
+07.11.2019 17:04:55.792 [http-bio-8888-exec-1] DEBUG  o.h.p.e.AbstractEntityPersister -  Delete 0: delete from test.t_dictionary where id=?
+07.11.2019 17:04:55.807 [http-bio-8888-exec-1] DEBUG  o.h.l.p.b.i.s.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7cf4fc69]
+07.11.2019 17:04:55.963 [http-bio-8888-exec-1] DEBUG  o.h.p.w.s.MetamodelGraphWalker - Visiting attribute path : name
+07.11.2019 17:04:55.963 [http-bio-8888-exec-1] DEBUG  o.h.p.w.s.MetamodelGraphWalker - Visiting attribute path : value
+07.11.2019 17:04:55.963 [http-bio-8888-exec-1] DEBUG  o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+07.11.2019 17:04:55.963 [http-bio-8888-exec-1] DEBUG  o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+07.11.2019 17:04:55.979 [http-bio-8888-exec-1] DEBUG  o.h.l.p.b.s.LoadPlanTreePrinter - LoadPlan(entity=myApp.model.DictionaryEntity)
+    - Returns
+       - EntityReturnImpl(entity=myApp.model.DictionaryEntity, querySpaceUid=<gen:0>, path=myApp.model.DictionaryEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=myApp.model.DictionaryEntity)
+          - SQL table alias mapping - dictionary0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+07.11.2019 17:04:55.979 [http-bio-8888-exec-1] DEBUG  o.h.l.e.p.EntityLoader - Static select for entity myApp.model.DictionaryEntity [NONE]: select dictionary0_.id as id1_0_0_, dictionary0_.name as name2_0_0_, dictionary0_.value as value3_0_0_ from test.t_dictionary dictionary0_ where dictionary0_.id=?
+07.11.2019 17:04:55.979 [http-bio-8888-exec-1] DEBUG  o.h.l.p.b.i.s.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@64396229]
+07.11.2019 17:04:55.979 [http-bio-8888-exec-1] DEBUG  o.h.p.w.s.MetamodelGraphWalker - Visiting attribute path : name
+07.11.2019 17:04:55.979 [http-bio-8888-exec-1] DEBUG  o.h.p.w.s.MetamodelGraphWalker - Visiting attribute path : value
+07.11.2019 17:04:55.979 [http-bio-8888-exec-1] DEBUG  o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+07.11.2019 17:04:55.979 [http-bio-8888-exec-1] DEBUG  o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+07.11.2019 17:04:55.979 [http-bio-8888-exec-1] DEBUG  o.h.l.p.b.s.LoadPlanTreePrinter - LoadPlan(entity=myApp.model.DictionaryEntity)
+    - Returns
+       - EntityReturnImpl(entity=myApp.model.DictionaryEntity, querySpaceUid=<gen:0>, path=myApp.model.DictionaryEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=myApp.model.DictionaryEntity)
+          - SQL table alias mapping - dictionary0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+07.11.2019 17:04:55.979 [http-bio-8888-exec-1] DEBUG  o.h.l.e.p.EntityLoader - Static select for entity myApp.model.DictionaryEntity [READ]: select dictionary0_.id as id1_0_0_, dictionary0_.name as name2_0_0_, dictionary0_.value as value3_0_0_ from test.t_dictionary dictionary0_ where dictionary0_.id=?
+07.11.2019 17:04:55.979 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Static select for action ACTION_MERGE on entity myApp.model.DictionaryEntity: select dictionary0_.id as id1_0_0_, dictionary0_.name as name2_0_0_, dictionary0_.value as value3_0_0_ from test.t_dictionary dictionary0_ where dictionary0_.id=?
+07.11.2019 17:04:55.979 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Static select for action ACTION_REFRESH on entity myApp.model.DictionaryEntity: select dictionary0_.id as id1_0_0_, dictionary0_.name as name2_0_0_, dictionary0_.value as value3_0_0_ from test.t_dictionary dictionary0_ where dictionary0_.id=?
+07.11.2019 17:04:55.995 [http-bio-8888-exec-1] DEBUG  o.h.t.s.s.SchemaManagementToolCoordinator - No actions specified; doing nothing
+07.11.2019 17:04:55.995 [http-bio-8888-exec-1] DEBUG  o.h.e.t.j.p.i.JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+07.11.2019 17:04:55.995 [http-bio-8888-exec-1] DEBUG  o.h.e.t.j.p.i.JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+07.11.2019 17:04:56.010 [http-bio-8888-exec-1] DEBUG  o.h.e.t.j.p.i.StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07.11.2019 17:04:56.010 [http-bio-8888-exec-1] DEBUG  o.h.q.s.NamedQueryRepository - Checking 0 named HQL queries
+07.11.2019 17:04:56.010 [http-bio-8888-exec-1] DEBUG  o.h.q.s.NamedQueryRepository - Checking 0 named SQL queries
+07.11.2019 17:04:56.010 [http-bio-8888-exec-1] DEBUG  o.h.i.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@41948cac
+07.11.2019 17:04:56.010 [http-bio-8888-exec-1] DEBUG  o.h.i.SessionFactoryRegistry - Registering SessionFactory: d7869097-ea3b-46e2-92df-50702b62308e (<unnamed>)
+07.11.2019 17:04:56.010 [http-bio-8888-exec-1] DEBUG  o.h.i.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+07.11.2019 17:04:56.073 [http-bio-8888-exec-1] DEBUG  o.h.s.i.StatisticsInitiator - Statistics initialized [enabled=false]
+07.11.2019 17:04:56.073 [http-bio-8888-exec-1] DEBUG  o.h.e.t.i.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+07.11.2019 17:04:56.073 [http-bio-8888-exec-1] DEBUG  o.h.e.t.i.TransactionImpl - begin
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  org.hibernate.SQL - select * from TEST.T_DICTIONARY
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Result set row: 0
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Result row: EntityKey[myApp.model.DictionaryEntity#1]
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Result set row: 1
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Result row: EntityKey[myApp.model.DictionaryEntity#2]
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Result set row: 2
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Result row: EntityKey[myApp.model.DictionaryEntity#3]
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Result set row: 3
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Result row: EntityKey[myApp.model.DictionaryEntity#4]
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Result set row: 4
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Result row: EntityKey[myApp.model.DictionaryEntity#5]
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Result set row: 5
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Result row: EntityKey[myApp.model.DictionaryEntity#6]
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Result set row: 6
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Result row: EntityKey[myApp.model.DictionaryEntity#7]
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Result set row: 7
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Result row: EntityKey[myApp.model.DictionaryEntity#8]
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Result set row: 8
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Result row: EntityKey[myApp.model.DictionaryEntity#9]
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Result set row: 9
+07.11.2019 17:04:56.104 [http-bio-8888-exec-1] DEBUG  o.h.loader.Loader - Result row: EntityKey[myApp.model.DictionaryEntity#10]
+07.11.2019 17:04:56.120 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Resolving associations for [myApp.model.DictionaryEntity#1]
+07.11.2019 17:04:56.120 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Done materializing entity [myApp.model.DictionaryEntity#1]
+07.11.2019 17:04:56.120 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Resolving associations for [myApp.model.DictionaryEntity#2]
+07.11.2019 17:04:56.120 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Done materializing entity [myApp.model.DictionaryEntity#2]
+07.11.2019 17:04:56.120 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Resolving associations for [myApp.model.DictionaryEntity#3]
+07.11.2019 17:04:56.120 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Done materializing entity [myApp.model.DictionaryEntity#3]
+07.11.2019 17:04:56.120 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Resolving associations for [myApp.model.DictionaryEntity#4]
+07.11.2019 17:04:56.120 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Done materializing entity [myApp.model.DictionaryEntity#4]
+07.11.2019 17:04:56.120 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Resolving associations for [myApp.model.DictionaryEntity#5]
+07.11.2019 17:04:56.120 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Done materializing entity [myApp.model.DictionaryEntity#5]
+07.11.2019 17:04:56.120 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Resolving associations for [myApp.model.DictionaryEntity#6]
+07.11.2019 17:04:56.120 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Done materializing entity [myApp.model.DictionaryEntity#6]
+07.11.2019 17:04:56.120 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Resolving associations for [myApp.model.DictionaryEntity#7]
+07.11.2019 17:04:56.120 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Done materializing entity [myApp.model.DictionaryEntity#7]
+07.11.2019 17:04:56.120 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Resolving associations for [myApp.model.DictionaryEntity#8]
+07.11.2019 17:04:56.120 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Done materializing entity [myApp.model.DictionaryEntity#8]
+07.11.2019 17:04:56.120 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Resolving associations for [myApp.model.DictionaryEntity#9]
+07.11.2019 17:04:56.120 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Done materializing entity [myApp.model.DictionaryEntity#9]
+07.11.2019 17:04:56.120 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Resolving associations for [myApp.model.DictionaryEntity#10]
+07.11.2019 17:04:56.120 [http-bio-8888-exec-1] DEBUG  o.h.e.i.TwoPhaseLoad - Done materializing entity [myApp.model.DictionaryEntity#10]

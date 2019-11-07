@@ -34,10 +34,10 @@ public class HibernateUtil {
 
     public static Session getHibernateSession() {
         Configuration configuration = new Configuration().configure("hibernate.cfg.xml");
-        Properties f = configuration.getProperties();
-        configuration.getProperties().setProperty("hibernate.connection.password", DbConfiguration.getPassword());
-        configuration.getProperties().setProperty("hibernate.connection.username", DbConfiguration.getUserName());
-        configuration.getProperties().setProperty("hibernate.connection.url", DbConfiguration.getUrl());
+        Properties properties = configuration.getProperties();
+        properties.setProperty("hibernate.connection.password", DbConfiguration.getPassword());
+        properties.setProperty("hibernate.connection.username", DbConfiguration.getUserName());
+        properties.setProperty("hibernate.connection.url", DbConfiguration.getUrl());
         final SessionFactory sf = configuration.buildSessionFactory();
         return sf.openSession();
     }

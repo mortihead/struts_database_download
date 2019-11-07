@@ -4,7 +4,6 @@ import myApp.model.DataPacket;
 import myApp.model.DictionaryEntity;
 import myApp.utils.HibernateUtil;
 import org.hibernate.Session;
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -12,7 +11,7 @@ import java.util.List;
 
 //class with select and delete query
 public class RestRequests {
-    public static List getTableData(String tableName) throws IOException {
+    public static List getTableData(String tableName) {
         final Session session = HibernateUtil.getHibernateSession();
         session.beginTransaction();
         List data = session.createSQLQuery("select * from " + tableName)
