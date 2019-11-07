@@ -27,7 +27,7 @@ public class DataPacket {
 
     private static Connection connectionDb;
     private static final int buffSize = 10;
-    private static final Logger logger = LoggerFactory.getLogger(MainPageAction.class);
+    private static final Logger logger = LoggerFactory.getLogger(DataPacket.class);
 
     public static Connection getConnectionDb() { return connectionDb; }
 
@@ -42,8 +42,9 @@ public class DataPacket {
                 BufferedReader bufferedReader = new BufferedReader(fileReader);
                 bufferedReader.readLine();
                 while (sendPacket(bufferedReader)) {
-                    logger.debug("package read!");
+                    logger.debug("to next package!");
                 }
+                logger.debug("file read!");
                 bufferedReader.close();
                 Files.move(Paths.get(Configuration.getInputDirectory() + "/" + file.getName()),
                            Paths.get(Configuration.getOutputDirectory() + "/" + file.getName()),
