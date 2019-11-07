@@ -9,9 +9,12 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 
+import java.util.Properties;
+
 public class HibernateUtil {
     private static StandardServiceRegistry registry;
     private static SessionFactory sessionFactory;
+
     public static SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
             try {
@@ -31,8 +34,9 @@ public class HibernateUtil {
 
     public static Session getHibernateSession() {
         Configuration configuration = new Configuration().configure("hibernate.cfg.xml");
+        Properties f = configuration.getProperties();
         configuration.getProperties().setProperty("hibernate.connection.password", DbConfiguration.getPassword());
-        configuration.getProperties().setProperty("hibernate.connection.password", DbConfiguration.getUserName());
+        configuration.getProperties().setProperty("hibernate.connection.username", DbConfiguration.getUserName());
         configuration.getProperties().setProperty("hibernate.connection.url", DbConfiguration.getUrl());
         final SessionFactory sf = configuration.buildSessionFactory();
         return sf.openSession();
