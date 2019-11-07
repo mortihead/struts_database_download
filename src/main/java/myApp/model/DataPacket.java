@@ -1,11 +1,12 @@
 package myApp.model;
 
 import org.apache.commons.io.FilenameUtils;
-
-import javax.activation.MimetypesFileTypeMap;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.sql.*;
 import java.util.Objects;
 
@@ -13,8 +14,8 @@ public class DataPacket {
     static {
         try {
             Class.forName("org.h2.Driver");
-            String url = "jdbc:h2:tcp://localhost/~/test";
-            connection = DriverManager.getConnection(url, "sa", "sa");
+            connection = DriverManager.getConnection(Configuration.getUrl(),
+                    Configuration.getUserName(), Configuration.getPassword());
         }
         catch (Exception ex) {
             throw new Error();
@@ -39,6 +40,9 @@ public class DataPacket {
                     System.out.println("package read!");//need log!
                 }
                 bufferedReader.close();
+                Files.move(Paths.get(Configuration.getInputDirectory() + "/" + file.getName()),
+                           Paths.get(Configuration.getOutputDirectory() + "/" + file.getName()),
+                           StandardCopyOption.REPLACE_EXISTING);
             } else {
                 System.out.println("invalid file!!");//NEED LOG !!
             }
@@ -50,11 +54,12 @@ public class DataPacket {
         Statement stmt;//запрос
         String buffer;
         int i = 0;
-        stmt = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);//создаю запрос
-        connection.setAutoCommit(false);//вырубаю автокоммит
+        stmt = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+        connection.setAutoCommit(false);
         while (i++ < BUFFSIZE && (buffer = fileReader.readLine()) != null) {
             String[] line = buffer.split(",");
-            stmt.addBatch("INSERT INTO TEST.T_DICTIONARY(ID, NAME, VALUE) VALUES(\'" + line[0] + "\', \'" + line[1] + "\', " + line[2] + ")");
+            stmt.addBatch("INSERT INTO TEST.T_DICTIONARY(ID, NAME, VALUE) VALUES(\'"
+                    + line[0] + "\', \'" + line[1] + "\', " + line[2] + ")");
         }
         stmt.executeBatch();
         connection.commit();

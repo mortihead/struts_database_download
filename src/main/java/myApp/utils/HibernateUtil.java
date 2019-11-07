@@ -8,6 +8,11 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
 public class HibernateUtil {
     private static StandardServiceRegistry registry;
     private static SessionFactory sessionFactory;
@@ -28,7 +33,9 @@ public class HibernateUtil {
         return sessionFactory;
     }
 
-    public static Session getHibernateSession() {
+    public static Session getHibernateSession() throws IOException {
+//        java.util.Properties properties = new Properties();
+//        properties.load(new FileInputStream("config.xml"));
         final SessionFactory sf = new Configuration()
                 .configure("hibernate.cfg.xml").buildSessionFactory();
         return sf.openSession();

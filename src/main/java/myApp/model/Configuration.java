@@ -16,6 +16,9 @@ public class Configuration {
             doc.getDocumentElement().normalize();
             inputDirectory = doc.getElementsByTagName("input_folder").item(0).getTextContent();
             outputDirectory = doc.getElementsByTagName("output_folder").item(0).getTextContent();
+            userName = doc.getElementsByTagName("username").item(0).getTextContent();
+            password = doc.getElementsByTagName("password").item(0).getTextContent();
+            url = doc.getElementsByTagName("url").item(0).getTextContent();
         } catch (Exception ex) {
             throw new Error();
         }
@@ -23,8 +26,17 @@ public class Configuration {
 
     private static final String inputDirectory;
     private static final String outputDirectory;
+    private static final String userName;
+    private static final String password;
+    private static final String url;
 
     public static String getInputDirectory() { return inputDirectory; }
 
     public static String getOutputDirectory() { return outputDirectory; }
+
+    public static String getUserName() { return userName; }
+
+    public static String getPassword() { return password; }
+
+    public static String getUrl() { return url; }
 }
