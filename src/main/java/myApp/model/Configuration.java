@@ -5,7 +5,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 
-//считывает xml файл из корня проекта и сохраняет в поля параметры конфига
+//read config.xml from root directory and save params
 class Configuration {
     static {
         File file = new File("config.xml");

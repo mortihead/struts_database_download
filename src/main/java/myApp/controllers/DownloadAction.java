@@ -8,6 +8,7 @@ import org.apache.struts.action.ActionMapping;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+//download from the directory specified in the config file
 public class DownloadAction extends Action {
     @Override
     public ActionForward execute(ActionMapping mapping,

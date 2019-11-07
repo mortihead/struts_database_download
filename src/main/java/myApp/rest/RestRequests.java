@@ -10,6 +10,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 
+//class with select and delete query
 public class RestRequests {
     public static List getTableData(String tableName) throws IOException {
         final Session session = HibernateUtil.getHibernateSession();

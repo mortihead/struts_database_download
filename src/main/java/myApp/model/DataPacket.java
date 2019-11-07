@@ -1,6 +1,10 @@
 package myApp.model;
 
+import myApp.controllers.MainPageAction;
 import org.apache.commons.io.FilenameUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -24,10 +28,11 @@ public class DataPacket {
 
     private static Connection connectionDb;
     private static final int buffSize = 10;
+    private static final Logger logger = LoggerFactory.getLogger(MainPageAction.class);
 
     public static Connection getConnectionDb() { return connectionDb; }
 
-    //метод проверяет все файлы в заданной папке и загружает их в бд, если их тип csv
+    //download all .csv files from input directory to database
     public static boolean readFiles() throws Exception {
         final File folder = new File(Configuration.getInputDirectory());
         boolean f = false;
@@ -38,20 +43,20 @@ public class DataPacket {
                 BufferedReader bufferedReader = new BufferedReader(fileReader);
                 bufferedReader.readLine();
                 while (sendPacket(bufferedReader)) {
-                    System.out.println("package read!");//need log!
+                    logger.debug("package read!");
                 }
                 bufferedReader.close();
                 Files.move(Paths.get(Configuration.getInputDirectory() + "/" + file.getName()),
                            Paths.get(Configuration.getOutputDirectory() + "/" + file.getName()),
                            StandardCopyOption.REPLACE_EXISTING);
             } else {
-                System.out.println("invalid file!!");//NEED LOG !!
+                logger.debug("Invalid file " + file.getName());
             }
         }
         return f;
     }
 
-    //читывает из файлового дескриптора BUFFSIZE строк, создает sql запрос на insert и выполняет его
+    //read BUFFSIZE lines from FD, create insert sql query and executes him
     private static boolean sendPacket(BufferedReader fileReader) throws Exception {
         Statement stmt;
         String buffer;

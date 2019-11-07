@@ -1,0 +1,1 @@
+Struts 1 doesnt have put and delete methods. Because i`m added /Download, /Delete and /Main Paths for appropriate actions.

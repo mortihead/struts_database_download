@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.sql.SQLException;
 
+//delete all notes from TEST.T_DICTIONARY table
 public class DeleteAction extends Action {
     @Override
     public ActionForward execute(ActionMapping mapping,
