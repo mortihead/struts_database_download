@@ -12,6 +12,10 @@ import java.nio.file.StandardCopyOption;
 import java.sql.*;
 import java.util.Objects;
 
+/**
+ * this class is for loading data into a db. In buffSize, you can set the packet size
+ */
+
 public class DataPacket {
     static {
         try {

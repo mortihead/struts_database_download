@@ -5,7 +5,9 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 
-//read config.xml from root directory and save params
+/**
+ * read config.xml from root directory and save params
+ */
 public class DbConfiguration {
     static {
         File file = new File("config.xml");
