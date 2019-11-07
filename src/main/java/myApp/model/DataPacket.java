@@ -1,6 +1,5 @@
 package myApp.model;
 
-import myApp.controllers.MainPageAction;
 import org.apache.commons.io.FilenameUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,8 +16,8 @@ public class DataPacket {
     static {
         try {
             Class.forName("org.h2.Driver");
-            connectionDb = DriverManager.getConnection(Configuration.getUrl(),
-                    Configuration.getUserName(), Configuration.getPassword());
+            connectionDb = DriverManager.getConnection(DbConfiguration.getUrl(),
+                    DbConfiguration.getUserName(), DbConfiguration.getPassword());
         }
         catch (Exception ex) {
             throw new Error();
@@ -33,7 +32,7 @@ public class DataPacket {
 
     //download all .csv files from input directory to database
     public static boolean readFiles() throws Exception {
-        final File folder = new File(Configuration.getInputDirectory());
+        final File folder = new File(DbConfiguration.getInputDirectory());
         boolean f = false;
         for (final File file : Objects.requireNonNull(folder.listFiles())) {
             if (FilenameUtils.getExtension(file.getName()).equals("csv")) {
@@ -46,8 +45,8 @@ public class DataPacket {
                 }
                 logger.debug("file read!");
                 bufferedReader.close();
-                Files.move(Paths.get(Configuration.getInputDirectory() + "/" + file.getName()),
-                           Paths.get(Configuration.getOutputDirectory() + "/" + file.getName()),
+                Files.move(Paths.get(DbConfiguration.getInputDirectory() + "/" + file.getName()),
+                           Paths.get(DbConfiguration.getOutputDirectory() + "/" + file.getName()),
                            StandardCopyOption.REPLACE_EXISTING);
             } else {
                 logger.debug("Invalid file " + file.getName());

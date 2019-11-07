@@ -6,7 +6,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 
 //read config.xml from root directory and save params
-class Configuration {
+public class DbConfiguration {
     static {
         File file = new File("config.xml");
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -30,13 +30,13 @@ class Configuration {
     private static final String password;
     private static final String url;
 
-    static String getInputDirectory() { return inputDirectory; }
+    public static String getInputDirectory() { return inputDirectory; }
 
-    static String getOutputDirectory() { return outputDirectory; }
+    public static String getOutputDirectory() { return outputDirectory; }
 
-    static String getUserName() { return userName; }
+    public static String getUserName() { return userName; }
 
-    static String getPassword() { return password; }
+    public static String getPassword() { return password; }
 
-    static String getUrl() { return url; }
+    public static String getUrl() { return url; }
 }
