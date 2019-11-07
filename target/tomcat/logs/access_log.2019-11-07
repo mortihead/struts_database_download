@@ -1,1 +1,4 @@
-127.0.0.1 - - [07/Nov/2019:17:52:25 +0300] "POST /Main.do HTTP/1.1" 200 351 http-bio-8888-exec-1 1535
+127.0.0.1 - - [07/Nov/2019:18:15:59 +0300] "POST /Delete.do HTTP/1.1" 200 8 http-bio-8888-exec-1 641
+127.0.0.1 - - [07/Nov/2019:18:16:04 +0300] "POST /Download.do HTTP/1.1" 200 17 http-bio-8888-exec-3 47
+127.0.0.1 - - [07/Nov/2019:18:16:08 +0300] "POST /Download.do HTTP/1.1" 200 19 http-bio-8888-exec-5 32
+127.0.0.1 - - [07/Nov/2019:18:16:12 +0300] "POST /Main.do HTTP/1.1" 200 351 http-bio-8888-exec-7 1063

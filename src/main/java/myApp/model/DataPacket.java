@@ -25,7 +25,7 @@ public class DataPacket {
     }
 
     private static Connection connectionDb;
-    private static final int buffSize = 10;
+    private static final int buffSize = 3;
     private static final Logger logger = LoggerFactory.getLogger(DataPacket.class);
 
     public static Connection getConnectionDb() { return connectionDb; }
@@ -70,6 +70,6 @@ public class DataPacket {
         stmt.executeBatch();
         connectionDb.commit();
         stmt.close();
-        return i == buffSize;
+        return i >= buffSize;
     }
 }
