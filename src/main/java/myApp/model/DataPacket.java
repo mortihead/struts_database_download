@@ -25,14 +25,15 @@ public class DataPacket {
     private static Connection connectionDb;
     private static final int buffSize = 10;
 
-    public Connection getConnectionDb() { return connectionDb; }
+    public static Connection getConnectionDb() { return connectionDb; }
 
     //метод проверяет все файлы в заданной папке и загружает их в бд, если их тип csv
-    public static void readFiles() throws Exception {
+    public static boolean readFiles() throws Exception {
         final File folder = new File(Configuration.getInputDirectory());
-
+        boolean f = false;
         for (final File file : Objects.requireNonNull(folder.listFiles())) {
             if (FilenameUtils.getExtension(file.getName()).equals("csv")) {
+                f = true;
                 FileReader fileReader = new FileReader(file);
                 BufferedReader bufferedReader = new BufferedReader(fileReader);
                 bufferedReader.readLine();
@@ -47,6 +48,7 @@ public class DataPacket {
                 System.out.println("invalid file!!");//NEED LOG !!
             }
         }
+        return f;
     }
 
     //читывает из файлового дескриптора BUFFSIZE строк, создает sql запрос на insert и выполняет его

@@ -5,18 +5,23 @@
         "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
 
 <struts-config>
-<!--    описание классов, наследующихся от ActionForm. Хранит в себе данные, пришедшие от форм-->
-    <form-beans>
-        <form-bean name="MainPageForm" type="myApp.controllers.MainPageForm"/>
-    </form-beans>
 
-<!--    описывает класс обработчик и связь с ActionForm-->
     <action-mappings>
         <action input="/index.jsp"
-                name="MainPageForm"
                 path="/Main"
                 type="myApp.controllers.MainPageAction">
             <forward name="main" path="/getResult.jsp"/>
+        </action>
+        <action input="/index.jsp"
+                path="/Delete"
+                type="myApp.controllers.DeleteAction">
+            <forward name="main" path="/successDelete.jsp"/>
+        </action>
+        <action input="/index.jsp"
+                path="/Download"
+                type="myApp.controllers.DownloadAction">
+            <forward name="success" path="/successDownload.jsp"/>
+            <forward name="failure" path="/failureDownload.jsp"/>
         </action>
     </action-mappings>
 
