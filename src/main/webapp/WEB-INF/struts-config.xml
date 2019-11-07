@@ -7,18 +7,15 @@
 <struts-config>
 
     <action-mappings>
-        <action input="/index.jsp"
-                path="/Main"
+        <action path="/Main"
                 type="myApp.controllers.MainPageAction">
             <forward name="main" path="/getResult.jsp"/>
         </action>
-        <action input="/index.jsp"
-                path="/Delete"
+        <action path="/Delete"
                 type="myApp.controllers.DeleteAction">
             <forward name="main" path="/successDelete.jsp"/>
         </action>
-        <action input="/index.jsp"
-                path="/Download"
+        <action path="/Download"
                 type="myApp.controllers.DownloadAction">
             <forward name="success" path="/successDownload.jsp"/>
             <forward name="failure" path="/failureDownload.jsp"/>
