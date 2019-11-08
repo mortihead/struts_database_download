@@ -38,6 +38,7 @@ public class DataPacket {
     public static boolean readFiles() throws Exception {
         final File folder = new File(DbConfiguration.getInputDirectory());
         boolean f = false;
+
         for (final File file : Objects.requireNonNull(folder.listFiles())) {
             if (FilenameUtils.getExtension(file.getName()).equals("csv")) {
                 f = true;

@@ -15,7 +15,7 @@ public class DeleteAction extends Action {
     public ActionForward execute(ActionMapping mapping,
                                  ActionForm form,
                                  HttpServletRequest request,
-                                 HttpServletResponse response) throws SQLException {
+                                 HttpServletResponse response) throws Exception {
         RestRequests.clearTable("TEST.T_DICTIONARY");
         return mapping.findForward("main");
     }
