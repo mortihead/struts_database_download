@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcf36666-ab5d-40ba-879e-55eab0340239" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/myApp/model/DataPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myApp/model/DataPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/myApp/model/DbConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myApp/model/DbConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1779,7 +1777,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573033922519</updated>
       <workItem from="1573033923800" duration="16814000" />
-      <workItem from="1573108193145" duration="28386000" />
+      <workItem from="1573108193145" duration="28858000" />
     </task>
     <servers />
   </component>
