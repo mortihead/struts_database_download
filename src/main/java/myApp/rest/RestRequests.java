@@ -18,7 +18,8 @@ public class RestRequests {
         ResultSet names = stmt.executeQuery("SELECT TABLE_SCHEMA, TABLE_NAME " +
                 "FROM INFORMATION_SCHEMA.TABLES where TABLE_TYPE = 'TABLE'");
         while (names.next()) {
-            if (String.format("%s.%s", names.getString("TABLE_SCHEMA"), names.getString("TABLE_NAME")).equals(tableName)) {
+            if (String.format("%s.%s", names.getString("TABLE_SCHEMA"),
+                    names.getString("TABLE_NAME")).equals(tableName)) {
                 stmt.close();
                 return false;
             }

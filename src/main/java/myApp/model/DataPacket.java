@@ -37,11 +37,11 @@ public class DataPacket {
     //download all .csv files from input directory to database
     public static boolean readFiles() throws Exception {
         final File folder = new File(DbConfiguration.getInputDirectory());
-        boolean f = false;
+        boolean read = false;
 
         for (final File file : Objects.requireNonNull(folder.listFiles())) {
             if (FilenameUtils.getExtension(file.getName()).equals("csv")) {
-                f = true;
+                read = true;
                 FileReader fileReader = new FileReader(file);
                 BufferedReader bufferedReader = new BufferedReader(fileReader);
                 bufferedReader.readLine();
@@ -57,7 +57,7 @@ public class DataPacket {
                 logger.debug("Invalid file " + file.getName());
             }
         }
-        return f;
+        return read;
     }
 
     //read BUFFSIZE lines from FD, create insert sql query and executes him
@@ -69,8 +69,8 @@ public class DataPacket {
         connectionDb.setAutoCommit(false);
         while (i++ < buffSize && (buffer = fileReader.readLine()) != null) {
             String[] line = buffer.split(",");
-            stmt.addBatch("INSERT INTO TEST.T_DICTIONARY(ID, NAME, VALUE) VALUES(\'"
-                    + line[0] + "\', \'" + line[1] + "\', " + line[2] + ")");
+            stmt.addBatch(String.format("INSERT INTO TEST.T_DICTIONARY(ID, NAME, VALUE) VALUES(%s, '%s', %s)",
+                    line[0], line[1], line[2]));
         }
         stmt.executeBatch();
         connectionDb.commit();
